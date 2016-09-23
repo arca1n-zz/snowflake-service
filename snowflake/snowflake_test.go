@@ -15,7 +15,7 @@ func TestTimeStamp(t *testing.T) {
 	start := time.Now().UnixNano() / int64(time.Millisecond)
 	timestamp := timestamp()
 	if timestamp < start {
-		t.Fatalf("Start time %ll is greater than timestamp %ll", start, timestamp)
+		t.Fatalf("Start time %l is greater than timestamp %l", start, timestamp)
 	}
 }
 
@@ -28,6 +28,6 @@ func TestSnowflake(t *testing.T) {
 		t.Fail()
 		t.Logf("UUID generated is invalid", uuid)
 	} else {
-		t.Logf("UUID generated is %ll", uuid)
+		t.Logf("UUID generated is %l", uuid)
 	}
 }
