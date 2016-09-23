@@ -1,0 +1,6 @@
+package: .
+import:
+- package: github.com/labstack/echo
+  version: ~2.0.2
+- package: github.com/Sirupsen/logrus
+  version: ^0.10.0
